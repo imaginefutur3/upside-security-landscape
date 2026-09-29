@@ -2,6 +2,8 @@
 
 Public-source research corpus of **UPSide Academy cohorts 1–4 (2024–2026)**.
 
+> **Day 0 note:** the repository began as an **AI-assisted scaffold**, not as a completed analysis. I had not personally reviewed most collected sources in depth when the initial structure, dataset, classifications, and hypotheses were created. They are starting points to be checked, corrected, understood, and technically verified over time. See [`docs/day-0-ai-scaffold.md`](docs/day-0-ai-scaffold.md).
+
 This repository is designed as both:
 
 1. a longitudinal map of UPSide Academy security research/projects, and
@@ -24,7 +26,8 @@ This repository is designed as both:
 │   ├── projects.csv
 │   └── sources.csv
 ├── docs/
-│   └── evidence-policy.md
+│   ├── evidence-policy.md
+│   └── day-0-ai-scaffold.md
 ├── baseline/
 │   ├── what-i-know.md
 │   ├── what-i-think-i-know.md
@@ -41,6 +44,17 @@ This repository is designed as both:
 ├── notes/
 └── failed/
 ```
+
+## Verification states
+
+The project separates **source quality** from **my own level of verification**:
+
+- **0 — AI-scaffolded:** collected/classified/proposed by AI; not personally verified yet
+- **1 — Source-checked:** I personally opened the relevant source and confirmed the recorded claim
+- **2 — Understood:** I can explain the concept and answer basic follow-up questions in my own words
+- **3 — Technically verified:** I verified at least part of it through code, reproduction, protocol documentation, tests, or equivalent technical evidence
+
+These states are not quality scores. They show how far I personally verified the material.
 
 ## Evidence policy
 
@@ -90,17 +104,19 @@ The first dataset contains the **16 identified cohort final projects** plus sour
 ## Working workflow
 
 ```text
-Own first-pass hypothesis
+AI-assisted scaffold / first-pass hypothesis
         ↓
-AI-assisted classification
+Personal source check
         ↓
-Official source / GitHub / protocol docs
+Understand in my own words
         ↓
 Correction log
         ↓
 Longitudinal analysis
         ↓
-Technical deep dive
+Technical deep dive / reproduction
+        ↓
+Explicit unknowns
         ↓
 Expert calibration
 ```
@@ -108,3 +124,5 @@ Expert calibration
 ## Status
 
 This is a living corpus. Missing repositories, slide decks, videos, alias mappings, and cohort attribution should remain explicit `unknown`/`not_found_publicly` values until verified.
+
+The initial Day 0 material should not be read as proof that I had already understood or validated every item. The point of the repository is to preserve the transition from **AI-assisted first pass → personal verification → correction → technical understanding → remaining uncertainty**.
